@@ -4,4 +4,4 @@
     )
 }}
 
-select * from {{ source('TPCH_SF1', 'ORDERS') }}
+select * from {{ source('TPCH_SF1', 'orders') }}

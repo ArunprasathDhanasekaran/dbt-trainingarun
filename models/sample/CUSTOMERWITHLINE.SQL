@@ -1,16 +1,8 @@
 select 
 
-c_name, c_phone
+c.c_name, c.c_phone, o_orderdate , o_orderstatus
 
-from {{ ref('customersales') }}
+FROM {{ ref('orders') }}
 
-LEFT JOIN
 
-SELECT 
-
-o_orderdate,o_orderstatus
-
-FROM {{ ref('stg_TPCH_SF1__ORDERS') }}
-
-ON c_custkey=o_custkey
 
