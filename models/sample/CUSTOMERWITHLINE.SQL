@@ -1,8 +1,8 @@
 select 
 
-c.c_name, c.c_phone, o_orderdate , o_orderstatus
+c.c_name, c.c_phone
 
-FROM {{ ref('orders') }}
+FROM {{ ref('customersales') }}
 
 
 
