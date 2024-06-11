@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: TPCDS_SF100TCL
+    database: snowflake_sample_data
+    schema: TPCDS_SF100TCL
+    tables:
+      - name : CATALOG_PAGE
+
+    tables:
+
+      - name : CATALOG_RETURNS
+      
