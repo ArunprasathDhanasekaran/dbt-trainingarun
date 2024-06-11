@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sampdb
+    database: snowflake_sample_data
+    schema: tpcds_sf100Tcl
+    tables:
+      - name: CATALOG_PAGE
