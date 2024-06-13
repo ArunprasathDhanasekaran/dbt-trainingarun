@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: srcdata
+    database: GLOBAL_WEATHER__CLIMATE_DATA_FOR_BI
+    schema: STANDARD_TILE
+    tables:
+      - name: FORECAST_DAY
+
+      - name: HISTORY_DAY
+
+      - name: CLIMATOLOGY_DAY
+
+ 
+  - name: tgt
+    database: DBT_DB
+    schema: DBT_ARUNPRASATH
+    tables:
+      - name: tgtbll
