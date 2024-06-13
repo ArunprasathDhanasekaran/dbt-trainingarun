@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: wtmodel
+    database: GLOBAL_WEATHER__CLIMATE_DATA_FOR_BI
+    schema: STANDARD_TILE
+    tables:
+      - name: CLIMATOLOGY_DAY
+      - name: FORECAST_DAY
+      - name: HISTORY_DAY
+
+  - name: nwmodel
+    database: DBT_DB
+    schema: DBT_ARUNPRASATH
+    tables:
+      - name: STG_WTMODEL__FORECAST_DAY
+
+      - name: abcd
