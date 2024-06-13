@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: src_whether
+    database: GLOBAL_WEATHER__CLIMATE_DATA_FOR_BI
+    schema: STANDARD_TILE
+    tables:
+      - name: FORECAST_DAY
+
+      - name: HISTORY_DAY
+
+      - name: CLIMATOLOGY_DAY
+      
